@@ -1,0 +1,29 @@
+@use './variables' as *;
+@use './sidebar';
+@use './tracksContainer';
+@use './trackCard';
+@use './musicPlayer';
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+
+    &::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, and Opera */
+        width: 0;
+        height: 0;
+    }
+}
+
+/* Ensure the body has no margin or padding */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
